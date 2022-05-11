@@ -26,5 +26,6 @@ class ControlPanel {
         System.out.println(altimeter);
         System.out.println(airGauge);
     }
+}
 
   
