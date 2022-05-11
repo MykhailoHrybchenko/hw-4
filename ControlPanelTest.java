@@ -27,8 +27,4 @@ class ControlPanel {
         System.out.println(airGauge);
     }
 
-    public static void main(String[] args) {
-        ControlPanel controlPanel = new ControlPanel();
-        controlPanel.control();
-    }
-}
+  
