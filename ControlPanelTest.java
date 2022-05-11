@@ -1,20 +1,9 @@
- class ControlPanel {
-
-    private Altimeter altimeter = new Altimeter();
-    private AirGauge airGauge = new AirGauge();
-
-    public void control() {
-        System.out.println(altimeter);
-        System.out.println(airGauge);
-    }
-
+ class ControlPanelTest {
     public static void main(String[] args) {
-        ControlPanel controlPanel = new ControlPanel();
-        controlPanel.control();
+        new ControlPanel().control();
     }
 }
-
- class Altimeter {
+class Altimeter {
 
     @Override
     public String toString() {
@@ -28,8 +17,18 @@ class AirGauge {
         return "Measure air pressure";
     }
 }
-class ControlPanelTest {
+class ControlPanel {
+
+    private Altimeter altimeter = new Altimeter();
+    private AirGauge airGauge = new AirGauge();
+
+    public void control() {
+        System.out.println(altimeter);
+        System.out.println(airGauge);
+    }
+
     public static void main(String[] args) {
-        new ControlPanel().control();
+        ControlPanel controlPanel = new ControlPanel();
+        controlPanel.control();
     }
 }
