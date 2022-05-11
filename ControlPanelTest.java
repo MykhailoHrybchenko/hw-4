@@ -14,10 +14,11 @@
     }
 }
 
- class Radar {
+ class Altimeter {
 
-    public void scan() {
-        System.out.println("Scan done!");
+    @Override
+    public String toString() {
+        return "Measure height";
     }
 }
 class AirGauge {
